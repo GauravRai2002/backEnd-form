@@ -36,10 +36,10 @@ mongoose.connection.on('error', (err)=>{
 
 
 const userRequest = require('./models')
+app.use(userRequest)
 app.get('/employee',(req,res)=>{
     res.json({'yes':'success'})
 })
-app.use(userRequest)
 
 app.listen(PORT, ()=>{
     console.log(`server is running at port ${PORT}`)
