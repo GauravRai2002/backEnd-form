@@ -37,7 +37,7 @@ mongoose.connection.on('error', (err)=>{
 
 const userRequest = require('./models')
 app.use(userRequest)
-app.get('/employee',(req,res)=>{
+app.get('/',(req,res)=>{
     res.json({'yes':'success'})
 })
 
