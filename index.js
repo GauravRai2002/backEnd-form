@@ -39,7 +39,7 @@ const userRequest = require('./models')
 app.get('/employee',(req,res)=>{
     res.json({'yes':'success'})
 })
-app.use('/employee',userRequest)
+app.use(userRequest)
 
 app.listen(PORT, ()=>{
     console.log(`server is running at port ${PORT}`)
