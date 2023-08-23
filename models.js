@@ -47,6 +47,10 @@ const employeeSchema = new mongoose.Schema({
     url:{
         type: String,
         required:true
+    },
+    join:{
+        type: String,
+        required:true
     }
 })
 
